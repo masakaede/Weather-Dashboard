@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Weather Dashboard</title>
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- CSS Reference -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header class="container-fluid fixed-top">
+        <div class="row">
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <h1 style="display: inline-block; text-align: center;">Weather Dashboard</h1>
+            </nav>
+        </div>
+    </header>
+    <!-- main  -->
+    <main class="container-fluid">
+        <section class="row">
+            <div class="col-md-3">
+                <div class="search-bar">
+                    <h3 class="">Search for a City:</h3>
+                    <form id="city-form input-group mb-3">
+                        <input type="text" id="city-input" placeholder="city, country code">
+                        <button type="submit" id="find-city"><i class="fa fa-search"></i></button>
+                    </form>
+                    <br>
+                </div>
+                <!-- search history-->
+                <div class="search-city">
+
+                    <ul id="search-history"></ul>
+
+                </div>
+            </div>
+
+            <div class="col-md-9">
+                <!-- current weather  -->
+                <div class="row search-result">
+
+                    <div class="card-body">
+                        <div>
+                            <h2 class="card-title">City Name</h2><img id="current-icon">
+                        </div>
+
+                        <br>
+                        <p>Temperature: <span id="temperature"></span></p>
+                        <br>
+                        <p>Humidity: <span id="humidity"></span></p>
+                        <br>
+                        <p>Wind Speed: <span id="wind-speed"></span></p>
+                        <br>
+                        <p>UV Index: <span id="uv-index"></span></p>
+
+                    </div>
+
+                </div>
+                <br>
+                <!-- forecast  -->
+                <div class=" forecast">
+                    <div class="row">
+                        <h2 class="card-title">5-Day Forcast</h2>
+                    </div>
+                    <div class="row ">
+                        <div class="col-2 forecast-result mr-auto">
+                            <div id="forecast-date">date</div>
+                            <br>
+                            <img id="forecast-condition">
+                            <br>
+                            <div id="forecast-temp">temperature</div>
+                            <br>
+                            <div id="forecast-humi">humidity</div>
+                            <br>
+                        </div>
+
+                        <div class="col-2 forecast-result mr-auto">
+                            <div id="forecast-date">date</div>
+                            <br>
+                            <img id="forecast-condition">
+                            <br>
+                            <div id="forecast-temp">temperature</div>
+                            <br>
+                            <div id="forecast-humi">humidity</div>
+                            <br>
+                        </div>
+                        <div class="col-2 forecast-result mr-auto">
+                            <div id="forecast-date">date</div>
+                            <br>
+                            <img id="forecast-condition">
+                            <br>
+                            <div id="forecast-temp">temperature</div>
+                            <br>
+                            <div id="forecast-humi">humidity</div>
+                            <br>
+                        </div>
+
+                        <div class="col-2 forecast-result mr-auto">
+                            <div id="forecast-date">date</div>
+                            <br>
+                            <img id="forecast-condition">
+                            <br>
+                            <div id="forecast-temp">temperature</div>
+                            <br>
+                            <div id="forecast-humi">humidity</div>
+                            <br>
+                        </div>
+                        <div class="col-2 forecast-result mr-auto">
+                            <div id="forecast-date">date</div>
+                            <br>
+                            <img id="forecast-condition">
+                            <br>
+                            <div id="forecast-temp">temperature</div>
+                            <br>
+                            <div id="forecast-humi">humidity</div>
+                            <br>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer  -->
+    <footer class="container-fluid fixed-bottom">
+        <div class="row justify-content-center">
+            <div>
+                <h2>© Copyright</h2>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <!-- jQuery, javascript file for the Bootstrap's javascript file to function -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="moment.js"></script>
+    <script src="script.js"></script>
+</body>
+
+
+
+
+</html>
