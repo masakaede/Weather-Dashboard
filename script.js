@@ -183,9 +183,10 @@ $("document").ready(function () {
             $("#humidity").text(storedCurrent.currentHumi);
             $("#wind-speed").text(storedCurrent.currentWind);
             $("#uv-index").text(storedCurrent.currentUv);
+            currentUv = storedCurrent.currentUv;
+            currentUvColor();
         }
-        currentUv = storedCurrent.currentUv;
-        currentUvColor();
+
 
         var storedForecast = JSON.parse(localStorage.getItem("forecastWeather"));
         if (storedForecast !== null) {
