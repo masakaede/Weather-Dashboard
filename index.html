@@ -2,7 +2,6 @@
 <html lang="en-us">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Weather Dashboard</title>
@@ -29,7 +28,7 @@
         <section class="row">
             <div class="col-md-3">
                 <div class="search-bar">
-                    <h3 class="">Search for a City:</h3>
+                    <h4 class="">Search for a City:</h4>
                     <form id="city-form input-group mb-3">
                         <input type="text" id="city-input" placeholder="city, country code">
                         <button type="submit" id="find-city"><i class="fa fa-search"></i></button>
@@ -38,21 +37,17 @@
                 </div>
                 <!-- search history-->
                 <div class="search-city">
-
                     <ul id="search-history"></ul>
-
                 </div>
             </div>
 
             <div class="col-md-9">
                 <!-- current weather  -->
                 <div class="row search-result">
-
                     <div class="card-body">
                         <div>
                             <h2 class="card-title" id="city-name">City Name</h2><img id="current-icon">
                         </div>
-
                         <br>
                         <p>Temperature: <span id="temperature"></span></p>
                         <br>
@@ -61,38 +56,33 @@
                         <p>Wind Speed: <span id="wind-speed"></span></p>
                         <br>
                         <p>UV Index: <span id="uv-index"></span></p>
-
                     </div>
-
                 </div>
                 <br>
                 <!-- forecast  -->
-                <div class=" forecast">
-                    <div class="row">
-                        <h2 class="card-title">5-Day Forcast</h2>
+                <div class="">
+                    <div class="row forecast">
+                        <h3 class="card-title">5-Day Forecast</h3>
                     </div>
                     <div class="row forecast-cards">
-                        <div class="col-2 forecast-result mr-auto">
-                            <div id="forecast-date-1">date</div>
+                        <div class="col forecast-result mr-auto">
+                            <div class="forecast-date" id="forecast-date-1">date</div>
                             <img id="forecast-condition-1">
                             <br>
                             <div id="forecast-temp-1">temperature</div>
                             <br>
                             <div id="forecast-humi-1">humidity</div>
-                            <br>
                         </div>
-
-                        <div class="col-2 forecast-result mr-auto">
-                            <div id="forecast-date-2">date</div>
+                        <div class="col forecast-result mr-auto">
+                            <div class="forecast-date" id="forecast-date-2">date</div>
                             <img id="forecast-condition-2">
                             <br>
                             <div id="forecast-temp-2">temperature</div>
                             <br>
                             <div id="forecast-humi-2">humidity</div>
-                            <br>
                         </div>
-                        <div class="col-2 forecast-result mr-auto">
-                            <div id="forecast-date-3">date</div>
+                        <div class="col forecast-result mr-auto">
+                            <div class="forecast-date" id="forecast-date-3">date</div>
                             <img id="forecast-condition-3">
                             <br>
                             <div id="forecast-temp-3">temperature</div>
@@ -100,9 +90,8 @@
                             <div id="forecast-humi-3">humidity</div>
                             <br>
                         </div>
-
-                        <div class="col-2 forecast-result mr-auto">
-                            <div id="forecast-date-4">date</div>
+                        <div class="col forecast-result mr-auto">
+                            <div class="forecast-date" id="forecast-date-4">date</div>
                             <img id="forecast-condition-4">
                             <br>
                             <div id="forecast-temp-4">temperature</div>
@@ -110,8 +99,8 @@
                             <div id="forecast-humi-4">humidity</div>
                             <br>
                         </div>
-                        <div class="col-2 forecast-result mr-auto">
-                            <div id="forecast-date-5">date</div>
+                        <div class="col forecast-result mr-auto">
+                            <div class="forecast-date" id="forecast-date-5">date</div>
                             <img id="forecast-condition-5">
                             <br>
                             <div id="forecast-temp-5">temperature</div>
@@ -119,7 +108,6 @@
                             <div id="forecast-humi-5">humidity</div>
                             <br>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -127,25 +115,12 @@
     </main>
 
     <!-- footer  -->
-    <footer class="container-fluid fixed-bottom">
-        <div class="row justify-content-center">
-            <div>
-                <h2></h2>
-            </div>
-        </div>
-    </footer>
-
-
-
-
+    <footer class="container-fluid fixed-bottom"></footer>
 
     <!-- jQuery, javascript file for the Bootstrap's javascript file to function -->
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="moment.js"></script>
     <script src="script.js"></script>
 </body>
-
-
-
 
 </html>

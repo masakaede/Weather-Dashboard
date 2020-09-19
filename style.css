@@ -1,8 +1,5 @@
 * {
     box-sizing: border-box;
-    /* border-width: 2px;
-    border-color: brown;
-    border-style: solid; */
 }
 
 .navbar {
@@ -16,7 +13,6 @@ nav {
 form button {
     background: rgb(60, 112, 255);
     color: rgb(255, 255, 255);
-
 }
 
 main {
@@ -37,17 +33,14 @@ section {
 
 .col-md-3 {
     background-color: rgb(238, 238, 238);
- 
 }
-
 
 .search-result{
     border-width: 1px;
     border-color: rgb(136, 136, 136);
     border-style: solid;
-
+    margin-left: 20px;
 }
-
 
 .search-city {
     padding-left: 0px;
@@ -80,13 +73,30 @@ li {
     font-size: 20px;
 }
 
+.forecast {
+    margin-left: 20px;
+}
+.forecast-cards {
+    margin-left: 10px;
+}
+
 .card-title {
     display: inline-block;
+
 }
 
 .forecast-result {
     background-color: rgb(67, 113, 241);
     color: white;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    max-width: 200px;
+}
+
+.forecast-date {
+    margin-top: 10px;
+    font-size: 25px;
 }
 
 h1 {
@@ -95,11 +105,15 @@ h1 {
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 35px;
 }
 
 h3 {
-    font-size: 20px;
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 25px;
 }
 
 #uv-index {
@@ -108,38 +122,8 @@ h3 {
     padding-bottom: 3px;
 }
 
-
-.grey-border {
-    background-color: grey;
-    height: 1px;
-
-}
-
-.bio-img {
-    margin-right: 20px; 
-    width: 200px;  
-
-}
-
-.bio {
-    float: inline-start;
-
-}
-
-
 footer {
     background-color: rgb(206, 203, 203);
     color: rgb(114, 113, 113);
-    height: 20px;
-}
-
-/* .green-border {
-    background-color: rgb(26, 150, 155);
-    height: 4px;
-} */
-
-footer h2 {
-    font-size: 20px;
-    padding-top: 10px;
-    
+    height: 30px;
 }
