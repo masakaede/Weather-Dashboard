@@ -53,7 +53,7 @@ $("document").ready(function () {
 
             //weather icon
             var icon = currentResp.weather[0].icon
-            var iconURL = "http://openweathermap.org/img/wn/" + icon + "@2x.png"
+            var iconURL = "https://openweathermap.org/img/wn/" + icon + "@2x.png"
             $("#current-icon").attr("src", iconURL)
 
             //fetch uv data
@@ -97,7 +97,7 @@ $("document").ready(function () {
         }).then(function (forecastResp) {
             //day one
             var iconOne = forecastResp.list[7].weather[0].icon;
-            var iconOneURL = "http://openweathermap.org/img/wn/" + iconOne + "@2x.png";
+            var iconOneURL = "https://openweathermap.org/img/wn/" + iconOne + "@2x.png";
             var temperpatureOne = "Temp: " + (forecastResp.list[7].main.temp - kelvinCalc).toFixed(1) + "°C";
             var humidityOne = "Humidity: " + forecastResp.list[7].main.humidity + "%";
             $("#forecast-date-1").text(forecastDayOne);
@@ -107,7 +107,7 @@ $("document").ready(function () {
 
             //day two
             var iconTwo = forecastResp.list[15].weather[0].icon;
-            var iconTwoURL = "http://openweathermap.org/img/wn/" + iconTwo + "@2x.png";
+            var iconTwoURL = "https://openweathermap.org/img/wn/" + iconTwo + "@2x.png";
             var temperatureTwo = "Temp: " + (forecastResp.list[15].main.temp - kelvinCalc).toFixed(1) + "°C";
             var humidityTwo = "Humidity: " + forecastResp.list[15].main.humidity + "%";
             $("#forecast-date-2").text(forecastDayTwo);
@@ -117,7 +117,7 @@ $("document").ready(function () {
 
             //day three
             var iconThree = forecastResp.list[23].weather[0].icon;
-            var iconThreeURL = "http://openweathermap.org/img/wn/" + iconThree + "@2x.png";
+            var iconThreeURL = "https://openweathermap.org/img/wn/" + iconThree + "@2x.png";
             var temperatureThree = "Temp: " + (forecastResp.list[23].main.temp - kelvinCalc).toFixed(1) + "°C";
             var humidityThree = "Humidity: " + forecastResp.list[23].main.humidity + "%";
             $("#forecast-date-3").text(forecastDayThree);
@@ -127,7 +127,7 @@ $("document").ready(function () {
 
             //day four
             var iconFour = forecastResp.list[31].weather[0].icon;
-            var iconFourURL = "http://openweathermap.org/img/wn/" + iconFour + "@2x.png";
+            var iconFourURL = "https://openweathermap.org/img/wn/" + iconFour + "@2x.png";
             var temperatureFour = "Temp: " + (forecastResp.list[31].main.temp - kelvinCalc).toFixed(1) + "°C";
             var humidityFour = "Humidity: " + forecastResp.list[31].main.humidity + "%";
             $("#forecast-date-4").text(forecastDayFour);
@@ -137,7 +137,7 @@ $("document").ready(function () {
 
             //day five
             var iconFive = forecastResp.list[39].weather[0].icon
-            var iconFiveURL = "http://openweathermap.org/img/wn/" + iconFive + "@2x.png";
+            var iconFiveURL = "https://openweathermap.org/img/wn/" + iconFive + "@2x.png";
             var temperatureFive = "Temp: " + (forecastResp.list[39].main.temp - kelvinCalc).toFixed(1) + "°C";
             var humidityFive = "Humidity: " + forecastResp.list[39].main.humidity + "%";
             $("#forecast-date-5").text(forecastDayFive);
