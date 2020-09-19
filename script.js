@@ -246,7 +246,7 @@ $("document").ready(function () {
 
     //hitorical searh button
     searchHistory.on("click", 'li', function () {
-        console.log($(this).text())
+
         cityInput = $(this).text()
         weatherData()
     })
